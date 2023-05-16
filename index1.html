@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="in1.css">
+  
+</head>
+<body>
+  <div class="row">
+  <div class="col-sm-4">
+     <div class="row">
+       <div class="col-sm-2">
+        <a href="index1.html">
+        <img  src="learnin(1).png"  style="width: 274px;" >
+       </a>
+        </div>
+      <div class="col-sm-10"><p></p></div>
+     </div>
+     </div>    
+    
+  <div class="col-sm-8">  
+  <div id="navbar"> 
+    <ul> 
+    <li><a href="course1.html">COURSES</a></li> 
+    <li><a href="blogs1.html">BLOGS</a></li> 
+    <li><a href="aboutus1.html">ABOUT</a></li> 
+    <!---<li><a href="signup1.html">SIGNUP</a></li> --->
+    <li ><a><button type="button"style="color: white;text-decoration-line: none;" class="btn btn-link btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">
+      LOGIN </button></a>
+    </li>
+     
+       
+    </ul> 
+  </div> 
+</div>
+</div>
+<!-- login popup start-->
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Login Now..!</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="{% url 'login' %}" method="post">
+          
+
+  <div class="mb-3 mt-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+  </div>
+  <div class="form-check mb-3">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        <p> <a href="forgotpass1.html"> ForgotPassword? </a> </p>
+        <p> <a href="index1.html">Go Back</a> </p>
+        <p> <a href="signup1.html">Create New account</a></p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- login popup end-->
+<div>
+  <svg width="100%" height="30px">
+    <line x1="0" y1="2" x2="2010" y2="2" style="stroke:rgb(255, 153, 0);stroke-width:2" />
+  </svg>
+</div>
+<section>
+<div class="row">
+  <div class="col-sm-6" style="width: 1000px;height: 600px;">
+  <img src="front.jpg"  style="width: 800px;height: 600px;">
+  </div>
+  <div class="col-sm-6" style="width: 500px;height: 30px;">
+    <div class="row"> 
+      <div class="col-sm-6">
+      <h1 class="text" style="color: sienna;font-size:22px;"> Course List</h1>
+       </div>
+       <div class="col-sm-6" >
+        <p style="text-align: right;">
+       <a href="course1.html" style="font-size:20px;border-radius:8px;background-color: transparent;color: sienna;">View More</a>
+      </p> 
+      </div>
+    </div>    
+      
+      <div class="row" style="height:250px ;width: 500px;border-width:2px;border-color: black;">
+       <div class="col-sm-6">
+        <div class="card" style="width:250px;height: 250px;border-width:2px ;border-color: black;"><a href="course1.html">
+        <img class="card-img-top" src="cprogram.jpg" alt="Card image" style="width: 247px;height: 200px;"></a>
+        <div class="card-body"  style="margin-left: 0cm;">
+          <h4 class="card-title" style="font-size: 22px;text-align: center;">C-Programming </h4>
+        </div>
+        </div>
+        </div>
+       <div class="col-sm-6">  
+        <div class="card" style="width:250px;height: 250px;border-width:2px ;border-color: black;"><a href="course1.html">
+           <img class="card-img-top" src="cpp.png" alt="Card image"  style="width: 240px;height:190px;"  ></a>
+            <div class="card-body"  style="margin-left: 0cm;">
+                <h4 class="card-title" style="font-size: 22px;text-align: center;">C++-Programming </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height:500px ;width: 500px;border-width:2px;border-color: black;">
+        <div class="col-sm-6">
+         <div class="card" style="width:250px;height: 250px;border-width:2px ;border-color: black;"><a href="course1.html">
+         <img class="card-img-top" src="pypro.jpg" alt="Card image" style="width: 247px;height: 170px;"></a>
+         <div class="card-body"  style="margin-left: 0cm;">
+           <h4 class="card-title" style="font-size: 22px;text-align: center;">Python-Programming </h4>
+         </div>
+         </div>
+         </div>
+        <div class="col-sm-6">  
+         <div class="card" style="width:250px;height: 250px;border-width:2px ;border-color: black;"><a href="course1.html">
+            <img class="card-img-top" src="javapro.jpg" alt="Card image" style="width: 245px;height:200px;" ></a>
+             <div class="card-body"  style="margin-left: 0cm;">
+                 <h4 class="card-title" style="font-size: 22px;text-align: center;">Java-Programming </h4>
+             </div>
+           </div>
+         </div>
+       </div>
+      </div>
+</div></section>
+
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color:black"
+          >
+   
+
+    <!-- Section: Links  -->
+    <section class=""></br>
+
+
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">LEARNIN</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              This is educational site for providing 
+              free courses for students
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column 
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            Links
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">MDBootstrap</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">MDWordPress</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">BrandFlow</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Bootstrap Angular</a>
+            </p>
+          </div>
+          Grid column --
+
+          - Grid column --
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            -- Links --
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Help</a>
+            </p>
+          </div>
+          Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Gadag,Karnatak, India</p>
+            <p><i class="fas fa-envelope mr-3"></i> pshet73@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 9100000000</p>
+            <p><i class="fas fa-print mr-3"></i> + 9100000000</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+     <!-- Section: Social media -->
+     <section
+     class="d-flex justify-content-between p-4"
+     style="background-color:rgb(0, 0, 7)"
+     >
+<!-- Left -->
+
+<!-- Left -->
+
+<!-- Right -->
+<div>
+  <span>connected with us on :</span>
+<a href="" class="text-white me-4">
+  <i class="fab fa-facebook-f"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-twitter"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-google"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-linkedin"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-github"></i>
+</a>
+</div>
+<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3"
+         style="background-color: rgba(110, 100, 237, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="index1.html"
+         >Learnin.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+<!-- End of .container -->
+
+    </body>
+</html>
+
+

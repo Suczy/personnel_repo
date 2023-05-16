@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="in1.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-4">
+           <div class="row">
+             <div class="col-sm-2">
+              <a href="index1.html">
+                <img  src="learnin(1).png"  style="width: 274px;" >
+               </a></div>
+            
+           </div>
+           </div>    
+          
+        <div class="col-sm-8">  
+        <div id="navbar"> 
+          <ul> 
+          <li><a href="course1.html">COURSES</a></li> 
+          <li><a href="blogs1.html">BLOGS</a></li> 
+          <li><a href="aboutus1.html">ABOUT</a></li> 
+          <!---<li><a href="signup1.html">SIGNUP</a></li> --->
+          <li ><a><button type="button" style="color: white;text-decoration-line: none;" class="btn btn-link btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">
+            LOGIN </button></a>
+          </li>
+           
+             
+          </ul> 
+        </div> 
+      </div>
+      </div>
+      <div>
+        <svg width="100%" height="30px">
+          <line x1="0" y1="2" x2="2010" y2="2" style="stroke:rgb(255, 153, 0);stroke-width:2" />
+        </svg>
+      </div>
+<!-- login popup start-->
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Login Now..!</h4>
+        <button type="button"  class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="{% url 'login' %}" method="post">
+          
+
+  <div class="mb-3 mt-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+  </div>
+  <div class="form-check mb-3">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        <p> <a href="forgotpass1.html"> ForgotPassword? </a> </p>
+        <p> <a href="index1.html">Go Back</a> </p>
+        <p> <a href="signup1.html">Create New account</a></p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- login popup end-->
+
+<!----course list cards-->
+<div class="container mt-5" style="margin: 4cm;">
+    <div class="row">
+        <h1 class="text" style="color: sienna;size:36px;"> Course List</h1>
+        <div class="card" style="width:900px;height: fit-content;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="card-img-top" src="cprogram.jpg" alt="Card image" style="width: 160%;height: 100%;">
+                </div>
+                <div class="col-sm-9">
+            <div class="card-body"  style="margin-left: 3cm;">
+              <h4 class="card-title">C-Programming </h4>
+              <p class="card-text">Learn C Programming. C is a powerful general-purpose programming language. It can be used to develop software like operating systems, databases, compilers, and so on</p>
+              <p class="card-text"><a href="https://youtu.be/7Dh73z3icd8 ">Youtube video -Available</a></p>
+              <p class="card-text"><a href="https://www.codewithharry.com/videos/c-language-tutorials-in-hindi-1 ">Notes -Available</a></p>
+            </div>
+            </div>
+        </br>
+             <!------ <a href="#" class="btn btn-info">Start Learning.....</a>---->
+            </div>
+          </div>
+
+          <div class="card" style="width:900px;height: fit-content;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="card-img-top" src="cpp.png" alt="Card image" style="width: 150%;height: 100%;" >
+                </div>
+                <div class="col-sm-9">
+            <div class="card-body"  style="margin-left: 3cm;">
+              <h4 class="card-title">C++-Programming </h4>
+              <p class="card-text">C++ is a statically-typed, free-form, (usually) compiled, multi-paradigm, intermediate-level general-purpose middle-level programming language.”.</p>
+              <p class="card-text"><a href="https://youtu.be/j8nAHeVKL08 ">Youtube video -Available</a></p>
+              <p class="card-text"><a href="https://www.codewithharry.com/videos/cpp-tutorials-in-hindi-1/ ">Notes -Available</a></p>
+             </div>
+            </div>
+             <!------ <a href="#" class="btn btn-info">Start Learning.....</a>--->
+            </div>
+          </div>
+
+
+          <div class="card" style="width:900px;height: fit-content;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="card-img-top" src="pypro.jpg" alt="Card image" style="width: 150%;height: 100%;">
+                </div>
+                <div class="col-sm-9">
+            <div class="card-body"  style="margin-left: 3cm;">
+              <h4 class="card-title">Python-Programming </h4>
+              <p class="card-text">Python is a popular programming language. Python can be used on a server to create web applications. Start learning Python now </p>
+              <p class="card-text"><a href="https://youtu.be/_uQrJ0TkZlc ">Youtube video -Available</a></p>
+              <p class="card-text"><a href="https://www.codewithharry.com/tutorial/python/ "> Notes -Available</a></p>
+            </div>
+            </div>
+              <!----<a href="#" class="btn btn-info">Start Learning.....</a>--->
+            </div>
+          </div>
+
+
+
+          <div class="card" style="width:900px;height: fit-content;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="card-img-top" src="javapro.jpg" alt="Card image" style="width: 150%;height: 100%;">
+                </div>
+                <div class="col-sm-9">
+            <div class="card-body"  style="margin-left: 3cm;">
+              <h4 class="card-title">Java-Programming </h4>
+              <p class="card-text">Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language. Java was developed by Sun Microsystems </p>
+              <p class="card-text"><a href="https://youtu.be/ntLJmHOJ0ME ">Youtube video -Available</a></p>
+              <p class="card-text"><a href="https://www.codewithharry.com/videos/java-tutorials-for-beginners-1/"> Notes -Available</a></p>
+            </div>
+            </div>
+              <!--<a href="#" class="btn btn-info">Start Learning.....</a>---->
+            </div>
+          </div>
+
+
+
+          <div class="card" style="width:900px;height: fit-content;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="card-img-top" src="phppro.jpg" alt="Card image" style="width: 150%;height: 100%;">
+                </div>
+                <div class="col-sm-9">
+            <div class="card-body"  style="margin-left: 3cm;">
+              <h4 class="card-title">PHP-Programming </h4>
+              <p class="card-text">PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages. PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP. Start learning PHP now ».
+
+              </p>
+              <p class="card-text"><a href="https://youtu.be/OK_JCtrrv-c ">Youtube video -Available</a></p>
+              <p class="card-text"><a href="https://www.codewithharry.com/tutorial/php/ "> Notes -Available</a></p>
+            </div>
+            </div>
+             <!----- <a href="#" class="btn btn-info">Start Learning.....</a>--->
+            </div>
+          </div>
+
+
+
+          <div class="card" style="width:900px;height: fit-content;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="card-img-top" src="htmlpp.jpg" alt="Card image" style="width: 150%;height: 100%;">
+                </div>
+                <div class="col-sm-9">
+            <div class="card-body"  style="margin-left: 3cm;">
+              <h4 class="card-title">HTML </h4>
+              <p claa="card-text" >HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page.</p>
+              <p class="card-text"><a href=" https://youtu.be/6mbwJ2xhgzM">Youtube video -Available</a></p>
+              <p class="card-text"><a href="https://www.codewithharry.com/tutorial/html-home/ "> Notes -Available</a></p>
+            </div>
+            </div>
+              <!-----<a href="#" class="btn btn-info">Start Learning.....</a>--->
+            </div>
+          </div>
+
+
+
+          <div class="card" style="width:900px;height: fit-content;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="card-img-top" src="cssp.png" alt="Card image" style="width: 150%;height: 100%;">
+                </div>
+                <div class="col-sm-9">
+            <div class="card-body"  style="margin-left: 3cm;">
+              <h4 class="card-title">CSS</h4>
+              <p class="card-text">CSS Introduction. C ascading S tyle S heets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independent of the HTML that makes up each web page</p>
+              <p class="card-text"><a href="https://youtu.be/qKoajPPWpmo ">Youtube video -Available</a></p>
+              <p class="card-text"><a href="https://www.codewithharry.com/tutorial/css-home/ "> Notes -Available</a></p>
+            </div>
+            </div>
+             <!------- <a href="#" class="btn btn-info">Start Learning.....</a>--->
+            </div>
+          </div>
+
+
+
+
+          <div class="card" style="width:900px;height: fit-content;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="card-img-top" src="jspp.png" alt="Card image" style="width: 150%;height: 100%;">
+                </div>
+                <div class="col-sm-9">
+            <div class="card-body"  style="margin-left: 3cm;">
+              <h4 class="card-title">JAVASCRIPT </h4>
+              <p class="card-text">JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else</p>
+              <p class="card-text"><a href=" https://youtu.be/PkZNo7MFNFg">Youtube video -Available</a></p>
+              <p class="card-text"><a href="https://www.codewithharry.com/tutorial/js/ "> Notes -Available</a></p>
+            </div>
+            </div>
+              <!------<a href="#" class="btn btn-info">Start Learning.....</a>----->
+            </div>
+          </div>
+
+
+
+
+    </div>
+</div> 
+ <!-- Copyright -->
+ <div
+ class="text-center p-3"
+ style="background-color: rgb(1, 1, 10);color: #fff;"
+ >
+© 2020 Copyright:
+<a class="text-white" href="index1.html">Learnin.com</a>
+</div>   
+
+
+
+
+    </body>
+</html>
+
+
